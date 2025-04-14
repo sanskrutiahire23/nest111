@@ -2,7 +2,7 @@ import { useState } from "react";
 import Photocontext from "./Photocontext";
 
 const Photostate=(props)=> {
-    const host="https://nest111-qog7.onrender.com/"
+    const host="https://nest111-qog7.onrender.com"
 
     const initialphotos=[]
     const [photos,setphotos]=useState(initialphotos)

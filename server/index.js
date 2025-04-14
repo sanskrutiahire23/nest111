@@ -15,7 +15,7 @@ app.get('/',(req,res)=> {
 })
 
 app.listen(PORT,()=> {
-    console.log("Server is running on http://localhost:5000")
+    console.log("Server is running on https://nest111-qog7.onrender.com/")
 })
 const DB_URL=process.env.DB_URL
 mongoose.connect(DB_URL).then(()=>{

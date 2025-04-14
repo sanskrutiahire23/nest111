@@ -29,7 +29,7 @@ const Login = () => {
     setError("");
     console.log("Form submitted successfully", credentials);
     // Handle form submission logic (e.g., API call)
-    const response=await fetch('http://localhost:5000/api/auth/login',{
+    const response=await fetch('https://nest111-qog7.onrender.com/api/auth/login',{
       method:"POST",
       headers:{
         "Content-type":"Application/json",

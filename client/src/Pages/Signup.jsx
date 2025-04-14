@@ -38,7 +38,7 @@ const Signup = () => {
     setError("");
     console.log("Form submitted successfully", credentials);
     // Handle form submission logic (e.g., API call)
-    const response=await fetch('http://localhost:5000/api/auth/createuser',{
+    const response=await fetch('https://nest111-qog7.onrender.com/api/auth/createuser',{
       method:"POST",
       headers:{
         "Content-Type": "application/json",

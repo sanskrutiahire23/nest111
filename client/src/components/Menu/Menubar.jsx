@@ -20,7 +20,7 @@ const Menubar = () => {
     <Toaster position="top-right" reverseOrder={false} />
     <div className="sidebar">
       {/* Title */}
-      <div className="sidebar-title">PixelVault</div>
+      <div className="sidebar-title">Docnest</div>
 
       {/* Menu Options */}
       <ul className="sidebar-menu">

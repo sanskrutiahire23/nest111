@@ -1,0 +1,61 @@
+.how-it-works {
+    background-color:#03182c;
+    color: white;
+    padding: 50px 60px;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    font-weight: 600;
+    color: white; /* Gold accent for the title */
+  }
+  
+  .steps-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .step-card {
+    background: rgba(255, 255, 255, 0.1); /* Transparent card background */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 4%;
+  }
+  
+  .step-card:hover {
+    transform: translateY(-10px); /* Lift effect */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+  }
+  
+  .step-icon img {
+    width: 100px; /* Icon size */
+    height: 100px;
+    margin-bottom: 20px;
+    border-radius: 50%; /* Circular icons */
+    border: 3px solid #ffcc00; /* Gold border */
+    padding: 10px;
+    background: white;
+  }
+  
+  .step-title {
+    font-size: 1.6rem;
+    font-weight:600;
+    margin: 15px 0 10px;
+    color: #ffcc00; /* Gold accent for step titles */
+  }
+  
+  .step-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #e0e0e0;
+    padding: 0 10px;
+  }
+  

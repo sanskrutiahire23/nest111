@@ -1,0 +1,120 @@
+.signup-container {
+    display: flex;
+    height: 100vh; /* Full height of the viewport */
+    font-family: Arial, sans-serif;
+  }
+  
+  .form-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #001f3f, black);
+  }
+  
+  .form-box {
+    width: 400px;
+    padding:8rem;
+    background-color: #f8f9fa; /* Light grey background for the form box */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .form-header {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-header h2 {
+    font-size: 2rem;
+    color: #001f3f;
+    margin-bottom: 0.6rem;
+    margin-top: 1rem;
+  }
+  
+  .form-header p {
+    font-size: 1rem;
+    color: #6c757d;
+  }
+  
+  
+  .form-group {
+    margin-bottom: 0.8rem;
+    text-align: left;
+  }
+  
+  label {
+    display: block;
+    font-size: 0.8rem;
+    color: #001f3f;
+    margin-bottom: 0.5rem;
+  }
+  #labelname{
+    color:#001f3f;
+  }
+  
+  input {
+    width: 90%;
+    padding: 0.75rem;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 0,6rem;
+  }
+  
+  input:focus {
+    outline:#001f3f;
+    border-color: #001f3f;
+  }
+  
+  .signup-button {
+    width: 45%;
+    background: linear-gradient(to right, #001f3f, black);
+    color: white;
+    padding: 0.75rem ;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 0.7rem;
+    margin-bottom: 1rem;
+  }
+  
+  .signin-link {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #6c757d;
+  }
+  
+  .signin-link a {
+    color: #001f3f;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .signin-link a:hover {
+    text-decoration: underline;
+  }
+  
+  .image-section {
+    position: relative; /* Position relative for containing child elements */
+    width: 100%; /* Ensure it stretches horizontally */
+    height: 100%; /* Match parent container's height */
+    flex: 1; /* Take up all available space in the flexbox */
+    overflow: hidden; /* Prevent overflow for videos exceeding bounds */
+  }
+  
+  .background-video {
+    position: absolute; /* Position it within the container */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    width: 100%; /* Stretch to fill width */
+    height: 80%; /* Stretch to fill height */
+    object-fit: contain; /* Maintain aspect ratio while filling the container */
+    transform: translate(-50%, -50%); /* Ensure it's perfectly centered */
+  }
+  

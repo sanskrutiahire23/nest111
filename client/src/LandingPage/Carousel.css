@@ -1,0 +1,105 @@
+/* Services Section */
+.services-section {
+    background-color: #03182c; /* Deep Blue */
+    padding: 90px 10px;
+    color: white;
+    text-align: center;
+  }
+  
+  .services-title {
+    font-size: 2rem;
+    margin-bottom: 50px;
+    color: white; /* Gold */
+  }
+  
+  /* Carousel Container */
+  .carousel-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .carousel-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .slide-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .slide-image {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .slide-info {
+    text-align: left;
+    width: 50%;
+  }
+  
+  .slide-title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #ffcc00; /* Gold */
+  }
+  
+  .slide-description {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #dcdcdc; /* Light Gray */
+  }
+  
+  /* Slick Dots and Arrows Styling */
+  .slick-prev, .slick-next {
+    font-size: 0;
+    color: #ffcc00; /* Gold */
+    z-index: 1000;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .slick-prev:before, .slick-next:before {
+    font-size: 30px;
+    color: #ffcc00; /* Gold */
+  }
+  
+  .slick-dots li button:before {
+    color: #ffcc00; /* Gold */
+    font-size: 10px;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #ffffff; /* White for active dot */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .carousel-slide {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .slide-image {
+      width: 80%;
+    }
+  
+    .slide-info {
+      width: 100%;
+    }
+  
+    .slide-title {
+      font-size: 1.5rem;
+    }
+  
+    .slide-description {
+      font-size: 1rem;
+    }
+  }
+  

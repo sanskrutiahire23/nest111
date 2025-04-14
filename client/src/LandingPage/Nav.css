@@ -1,0 +1,91 @@
+/* Navbar Styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent; /* Deep Blue */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #03182c;
+}
+
+.navbar.scrolled {
+    background-color: #03182c; /* Slightly darker blue when scrolled */
+    padding: 7px 20px; /* Compact the navbar when scrolled */
+}
+
+/* Title on Top Left */
+.navbar-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    flex: 0.2; /* Adjust the space */
+    text-align: left;
+
+}
+
+.navbar-title.scrolled {
+    font-size: 1.2rem;
+}
+
+/* Links in the Center */
+.navbar-links {
+    display: flex;
+    justify-content: center; /* Center links horizontally */
+    gap: 50px;
+    list-style: none;
+    flex: 1.9; /* Take available space to center */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    display: inline;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: #ffcc00; /* Gold highlight on hover */
+}
+
+/* Get Started Button on Top Right */
+.get-started-btn {
+    background-color: #ffcc00; /* Gold Button */
+    color: #001f3f; /* Deep Blue */
+    border: none;
+    border-radius: 20px;
+    padding: 8px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 3%;
+}
+
+.get-started-btn:hover {
+    background-color: #ffd633; /* Slightly lighter gold */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none; /* Hide links on smaller screens */
+    }
+
+    .get-started-btn {
+        flex: 0;
+    }
+}

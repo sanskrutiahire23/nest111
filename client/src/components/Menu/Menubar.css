@@ -1,0 +1,112 @@
+/* Sidebar Container */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 210px; /* Reduced width */
+  background: linear-gradient(45deg, #001F3F, #1c1c1c);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Section */
+.sidebar-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+  border-bottom: 2px solid #34495e;
+  padding-bottom: 10px;
+  position: relative;
+  overflow: hidden; /* Hide the shiny effect outside the container */
+  cursor: default;
+}
+
+/* Shiny Effect */
+.sidebar-title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%; /* Start the shiny effect from outside the title */
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+  transform: skewX(-20deg); /* Adds a diagonal look to the shine */
+  animation: shiny-effect 11s linear infinite; /* Total cycle: 12s (2s effect + 10s pause) */
+}
+
+/* Animation Keyframes */
+@keyframes shiny-effect {
+  0% {
+    left: -100%;
+  }
+  16.66% { /* Equivalent to 2s in a 12s cycle */
+    left: 100%; /* End the effect at 2s */
+  }
+  100% {
+    left: 100%; /* Hold the position for the remaining 10s */
+  }
+}
+
+
+
+/* Menu List */
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1; /* Pushes log out to the bottom */
+}
+
+/* Menu Items */
+.sidebar-item {
+  margin: 35px 0;
+  display: flex;
+  gap: 15px;
+  padding: 0.4rem;
+  border-radius: 5px; /* Rounded corners for hover background */
+  transition: background 0.3s ease;
+  position: relative;
+  top: -2rem;
+}
+
+/* Menu Items Hover Effect */
+.sidebar-item:hover {
+  background: #6b6868;
+  cursor: pointer;
+}
+
+/* Menu Items Links */
+.sidebar-item a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+}
+
+/* Log Out Section */
+.sidebar-logout {
+  margin-top: auto; /* Pushes the logout button to the bottom */
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space between icon and text */
+  padding: 10px;
+  border-radius: 5px; /* Rounded corners for hover background */
+  transition: background 0.3s ease;
+}
+
+/* Log Out Hover Effect */
+.sidebar-logout:hover {
+  background: #e82e19; /* Red background for log out */
+  cursor: pointer;
+}
+
+.sidebar-logout button {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}

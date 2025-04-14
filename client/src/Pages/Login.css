@@ -1,0 +1,106 @@
+.signup-container {
+    display: flex;
+    height: 100vh; /* Full height of the viewport */
+    font-family: Arial, sans-serif;
+  }
+  
+  .image-section {
+    flex: 1;
+    background-color: transparent;/* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .form-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+  
+  .form-box {
+    width: 400px;
+    padding: 2rem;
+    background-color: #f8f9fa; /* Light grey background for the form box */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .form-header {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-header h2 {
+    font-size: 2rem;
+    color: #001f3f;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-header p {
+    font-size: 1rem;
+    color: #6c757d;
+  }
+  
+  
+  .form-group {
+    margin-bottom: 0.8rem;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 1rem;
+    color:#001f3f;
+    margin-bottom: 0.5rem;
+  }
+  
+  input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #001f3f;
+    box-shadow: 0 0 0 2px rgba(0, 31, 63, 0.25);
+  }
+  
+  .anybutton {
+    width: 22%;
+    background: linear-gradient(90deg, #001f3f, #010c17);
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  
+  .signin-link {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #6c757d;
+  }
+  
+  .signin-link a {
+    color: #001f3f;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .signin-link a:hover {
+    text-decoration: underline;
+  }
+  

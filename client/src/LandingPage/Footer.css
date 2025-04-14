@@ -1,0 +1,39 @@
+.footer {
+    background-color: #000000; /* Deep Blue */
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-brand {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .footer-copyright {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  
+  .footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .social-link {
+    font-size: 1.5rem;
+    color: #ffcc00;
+    transition: color 0.3s;
+  }
+  
+  .social-link:hover {
+    color: white; /* Gold for hover effect */
+  }
+  

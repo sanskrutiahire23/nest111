@@ -1,0 +1,57 @@
+.benefits-section {
+    background-color: #03182c; /* Deep Blue */
+    color: white;
+    padding: 40px 40px;
+    text-align: center;
+
+  }
+  
+  .benefits-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  
+  .benefits-list {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to the next line */
+    justify-content: center; /* Centers the items */
+    gap: 30px;
+  }
+  
+  .benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between icon and text */
+    width: calc(50% - 20px); /* Two boxes per row with some spacing */
+    background: rgba(255, 255, 255, 0.1); /* Subtle background highlight */
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-sizing: border-box; /* Ensures padding is included in width */
+  }
+  
+  .benefit-icon {
+    font-size: 2rem;
+    color: #ffcc00; /* Gold Icon Color */
+  }
+  
+  .benefit-text {
+    text-align: left;
+  }
+  
+  .benefit-title {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  .benefit-description {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .benefit-item {
+      width: 100%; /* Stacks all boxes on smaller screens */
+    }
+  }
+  
